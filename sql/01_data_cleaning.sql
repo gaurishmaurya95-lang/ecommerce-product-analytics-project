@@ -120,5 +120,26 @@ HAVING COUNT(*) > 1;
 -- STANDARDIZE CITY NAMES
 -- =========================
 
-UPDATE geolocation
-SET geolocation_city = LOWER(geolocation_city);
+-- Customers
+UPDATE olist_customers_dataset
+SET customer_city = UPPER(SUBSTR(customer_city, 1, 1)) || LOWER(SUBSTR(customer_city, 2));
+
+-- Sellers
+UPDATE olist_sellers_dataset
+SET seller_city = UPPER(SUBSTR(seller_city, 1, 1)) || LOWER(SUBSTR(seller_city, 2));
+
+-- Geolocation
+UPDATE olist_geolocation_dataset
+SET geolocation_city = UPPER(SUBSTR(geolocation_city, 1, 1)) || LOWER(SUBSTR(geolocation_city, 2));
+
+-- Customers
+UPDATE olist_customers_dataset
+SET customer_city = UPPER(SUBSTR(customer_city, 1, 1)) || LOWER(SUBSTR(customer_city, 2));
+
+-- Sellers
+UPDATE olist_sellers_dataset
+SET seller_city = UPPER(SUBSTR(seller_city, 1, 1)) || LOWER(SUBSTR(seller_city, 2));
+
+-- Geolocation
+UPDATE olist_geolocation_dataset
+SET geolocation_city = UPPER(SUBSTR(geolocation_city, 1, 1)) || LOWER(SUBSTR(geolocation_city, 2));
