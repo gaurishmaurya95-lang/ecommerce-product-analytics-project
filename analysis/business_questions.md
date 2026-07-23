@@ -11,9 +11,12 @@
 - Are delayed orders linked to poor reviews?
 
 ## Product Performance
-- Which products generate the highest revenue?
-- Which products receive the lowest ratings?
-- High revenue but low satisfaction products?
+- Which categories generate the most revenue?
+- Which products generate the most revenue?
+- Which products receive the highest number of orders?
+- What percentage of revenue comes from top categories?
+- Which products need improvement?
+- How does product performance vary by month?
 
 ## Seller Analysis
 - Which sellers generate the most orders?
